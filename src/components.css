@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lexend+Deca:wght@100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 35px;
+    padding: 60px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Krona One';
+}
+#loginContainer input{
+    width: 400px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: inset 1px 1px 5px 0px rgb(132, 143, 173); 
+}
+#loginContainer input:focus{
+    border: none;
+}
+
+#loginContainer input::placeholder{
+    color: rgb(93, 100, 106);
+    font-weight: 300
+}
+
+#loginContainer{
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: -10px 10px 20px 0px rgb(144, 149, 211);
+    border-radius: 25px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+#loginBtn{
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(202, 187, 233);
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg,  #f434d1, #1921fc);
+    color: white;
+}
+#loginBtn:hover{
+    transform: translateY(-5px);
+     box-shadow: 0px 5px 5px 0px rgb(144, 149, 211);
+}
+#headText{
+    background: linear-gradient(90deg, #f434d1, #1921fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.inputContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #c82aab;
+}
+.inputIcon{
+  animation-timing-function: ease-in-out;
+}
+@keyframes smoothBounce {
+  0%, 20%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  50% { transform: translateY(8px); }
+  60% { transform: translateY(-5px); }
+}
+.smoothBounce {
+  animation-name: smoothBounce;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: infinite;    
+}
+.smoothBounce {
+  animation-duration: 3s !important;    
+  animation-timing-function: ease-in-out;   
+}

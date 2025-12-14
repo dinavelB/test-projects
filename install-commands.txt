@@ -1,0 +1,28 @@
+===========For fontawesome icons============
+1# npm install @fortawesome/react-fontawesome
+2# npm install @fortawesome/free-solid-svg-icons
+
+==========Babel SPA routing (only react no vite.)===============
+1# put static files on public, except for the main.jsx, app.jsx, the server file must be on the root project.
+2# npm install @babel/core @babel/cli @babel/preset-env @babel/preset-react --save-dev (install babel)
+3# create a babel.config.json, see the babel config txt here on folder just copy and paste it.
+4# use the package.json wbabel txt for package json,, see at the folder structure, put that on the package.json you should 
+see a js version of all jsx, after that in the src in the index.html, put main.js
+5# create the raw pure node.js that serves the index.html and type npm run start to run the server
+
+=========webpack bundler============
+1#npm install --save-dev webpack webpack-cli
+2# add the webpack config js, eidt the package json and add the babel.config
+3# then run npx webpack --mode development, u should see a bundle js
+4# npm start to start the server.
+
+++++++prettier++++++
+1# install prettier extension,
+2# ctrl , and seacrhdefault formatter, select prettier, search save on format check editor something.
+3# create the prettier json .prettierrc/ .prettierrc.json 
+    -   {
+            "singleQuote": true,
+            "semi": false,
+            "tabWidth": 2,
+            "trailingComma": "es5"
+        }
