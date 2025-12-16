@@ -1,0 +1,2 @@
+1# npm install express mysql2 body-parser
+2# create a database pool (db.js)

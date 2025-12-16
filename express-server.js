@@ -2,6 +2,8 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
+import database from "./dB";
+import { use } from "react";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -29,10 +31,24 @@ app.use(express.json());
 
 //the end point
 app.post("/submit-response", (req, res) => {
-  const { username, email } = req.body;
-
-  submisions = { username, email };
-  res.json({ message: "Form data received" });
+  const { username, email } = req.body; //this is a object
+  database.query(
+    "insert into users (username, email) values (?,?)",
+    [username, email],
+    (error, content) => {
+      if (error) {
+        console.log("Somethings wrong");
+        return res.status(500).json({
+          message: "error saving data to the database",
+        });
+      } else {
+        res.status(200).json({
+          message: "data added",
+          data: content,
+        });
+      }
+    }
+  );
 });
 
 //get
