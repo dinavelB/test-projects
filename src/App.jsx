@@ -1,7 +1,7 @@
-import Home from "./components/sample";
+import Navigation from "./components/Navigation";
 
 function App() {
-  return <Home />;
+  return <Navigation />;
 }
 
 export default App;

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Krona+One&family=Lexend+Deca:wght@100..900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Google Sans";
+}
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(208, 246, 246);
+  gap: 20px;
+  padding: 50px;
+  border-radius: 20px;
+  height: 300px;
+}
+.formContainer {
+  padding: 100px 0px 0px 0px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.formContainer input {
+  width: 300px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding-left: 10px;
+}
+.formContainer button {
+  width: 100px;
+  margin-left: 100px;
+  height: 35px;
+  background-color: antiquewhite;
+  border: 1px solid gray;
+  transition: all ease 0.5s;
+}
+.formContainer button:hover {
+  box-shadow: 5px 5px 5px 0px rgb(140, 136, 192);
+  transform: translateY(-5px);
+  border-radius: 10px;
+  animation: infinite;
+}
