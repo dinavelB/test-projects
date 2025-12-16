@@ -7,7 +7,9 @@ export default function Home() {
     const getData = async () => {
       try {
         //get the
-        const response = await fetch("/submit-response");
+        const response = await fetch(
+          `/submit-response?username=${data.username}`
+        );
         const data = await response.json();
         setData(data);
       } catch (e) {
