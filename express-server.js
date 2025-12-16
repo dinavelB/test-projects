@@ -8,10 +8,7 @@ import session from "express-session";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const app = express();
-const port = 8080
-app.use(session(
-  secret:
-))
+const port = 8080;
 
 //add a middleware for src non blocking and for webpack eval()
 const isDev = process.env.NODE_ENV !== "production";
